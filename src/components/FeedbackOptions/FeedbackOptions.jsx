@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
-import { Button, BtnList} from "./Options.styled";
+import { Button, BtnList} from "./FeedbackOptions.styled";
 
 
-export const Options = ({options, onLeaveFeedback}) => {
+export const FeedbackOptions = ({options, onLeaveFeedback}) => {
     return (
         <BtnList>
             {options.map(el => (
@@ -14,7 +14,7 @@ export const Options = ({options, onLeaveFeedback}) => {
     );
 };
 
-Options.propTypes = {
+FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
   onLeaveFeedback: PropTypes.func.isRequired,
 };
