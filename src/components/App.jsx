@@ -1,4 +1,4 @@
-// import { Section } from "./SectionEl/Section ";
+import { Section } from "./Section/Section";
 import { FeedbackOptions } from "./FeedbackOptions/FeedbackOptions";
 import { Notification } from "./Notification/Notification";
 import { StatisticElement} from "./Statistics/Statistics";

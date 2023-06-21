@@ -1,5 +1,5 @@
-// import { BsEmojiSmile, BsEmojiNeutral, BsEmojiFrown, AiOutlineAreaChart, AiOutlineBarChart } from "react-icons/ai";
-import { AiOutlineSmile, AiOutlineFrown, AiOutlineMeh, AiOutlineAreaChart, AiOutlineBarChart } from "react-icons/ai";
+import { BsEmojiSmile, BsEmojiNeutral, BsEmojiFrown } from "react-icons/bs";
+import { AiOutlineAreaChart, AiOutlineBarChart } from "react-icons/ai";
 import { StatisticList, Text } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
@@ -8,13 +8,13 @@ export const StatisticElement = ({ good, neutral, bad, total, positivePercentage
   return (
     <StatisticList>
       <li>
-        <Text><AiOutlineSmile fill="green"/> Good: {good}</Text>
+        <Text><BsEmojiSmile fill="green"/> Good: {good}</Text>
       </li>
       <li>
-        <Text><AiOutlineMeh fill="orange"/> Neutral: {neutral}</Text>
+        <Text><BsEmojiNeutral fill="orange"/> Neutral: {neutral}</Text>
       </li>
       <li>
-        <Text><AiOutlineFrown fill="red"/> Bad: {bad}</Text>
+        <Text><BsEmojiFrown fill="red"/> Bad: {bad}</Text>
       </li>
       <li>
         <Text><AiOutlineBarChart/> Total: {total}</Text>
